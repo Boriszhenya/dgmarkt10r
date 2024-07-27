@@ -42,6 +42,7 @@
 
   @positive
   @Blog
+#    @boris
   Scenario: DGMARKT10R-T80 transition from main page bottom to Blog by button "Read More"
     Given user is on the main page
     And user is in the bottom of main page
@@ -50,6 +51,7 @@
 
   @positive
   @Blog
+#    @boris
   Scenario: DGMARKT10R-T87 transition from Blog page to post by button "Read More"
     Given user is on the main page
     And user is on the Blog page
