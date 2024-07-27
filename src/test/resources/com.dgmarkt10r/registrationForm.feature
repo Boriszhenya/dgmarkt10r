@@ -2,6 +2,7 @@ Feature: DGMARKT10R-16 - User registration
 
   @positive
   @registrationForm
+  @boris
   Scenario: DGMARKT10R-T4 (1.0) - User registration with valid data
     Given user is on the main page
     When the user goes to the My account menu
@@ -10,7 +11,7 @@ Feature: DGMARKT10R-16 - User registration
     Then clicking on the Continue button brings up a window that says "Your Account Has Been Created!"
 
   @negative
-  @registrationForm
+    @registrationForm
   Scenario Outline: DGMARKT10R-T17 (1.0) - Checking the "Password" field with non-valid data
     Given user is on the main page
     And the user goes to the My account menu
@@ -25,7 +26,7 @@ Feature: DGMARKT10R-16 - User registration
       |                                            |
 
   @negative
-  @registrationForm
+    @registrationForm
   Scenario Outline: DGMARKT10R-T15 (1.0) - Checking the "Telephone" field with non-valid data
     Given user is on the main page
     And the user goes to the My account menu
@@ -41,7 +42,7 @@ Feature: DGMARKT10R-16 - User registration
       |                                    |
 
   @negative
-  @registrationForm
+    @registrationForm
   Scenario Outline: DGMARKT10R-T12 (1.0) - Checking the "E-Mail" field with non-valid data
     Given user is on the main page
     And the user goes to the My account menu
@@ -62,7 +63,7 @@ Feature: DGMARKT10R-16 - User registration
       | petr@____.com                              |
 
   @negative
-  @registrationForm
+    @registrationForm
   Scenario Outline: DGMARKT10R-T8 (1.0) - Checking the "First Name" field with non-valid data
     Given user is on the main page
     And the user goes to the My account menu
@@ -77,7 +78,7 @@ Feature: DGMARKT10R-16 - User registration
       |                                   |
 
   @negative
-  @registrationForm
+    @registrationForm
   Scenario Outline: DGMARKT10R-T10 (1.0) - Checking the "Last Name" field with non-valid data
     Given user is on the main page
     And the user goes to the My account menu
