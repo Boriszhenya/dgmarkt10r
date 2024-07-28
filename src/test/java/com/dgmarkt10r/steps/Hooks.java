@@ -21,6 +21,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.time.Duration;
 
 import static com.dgmarkt10r.context.TestContext.getDriver;
 import static com.dgmarkt10r.context.TestContext.removeDriver;
@@ -52,6 +53,8 @@ public class Hooks {
                     driver = new RemoteWebDriver(new URI(ConfigurationReader.get("remote_server_url")).toURL(), chromeOptions);
                 } else {
                     driver = new ChromeDriver(chromeOptions);
+                    //driver.manage().timeouts().pageLoadTimeout(100, SECONDS);
+                    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
                 }
                 break;
             case "firefox":
