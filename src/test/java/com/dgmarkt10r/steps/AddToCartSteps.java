@@ -33,8 +33,8 @@ public class AddToCartSteps {
     @And("clicks on the add to cart icon")
     public void clicksOnTheAddToCartIcon() {
         CategoryPage categoryPage = new CategoryPage();
-        getWait().until(ExpectedConditions.visibilityOf(categoryPage.addToCartIcon.get(2)));
-        categoryPage.addToCartIcon.get(2).click();
+        getWait().until(ExpectedConditions.visibilityOf(categoryPage.addToCartIcon.get(3)));
+        categoryPage.addToCartIcon.get(3).click();
     }
 
     @And("clicks on the product image")

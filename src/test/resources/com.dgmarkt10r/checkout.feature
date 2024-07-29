@@ -51,7 +51,7 @@ Feature: Checking of the checkout page functionality
     And clicks on the continue button from delivery method
     When user clicks on checkbox to agree with terms
     And clicks on the continue button from payment method
-    Then the total price of items is "$264.00"
+    Then the total price of items is "$110.00"
 
   @positive
   @Checkout
