@@ -21,9 +21,11 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.time.Duration;
 
 import static com.dgmarkt10r.context.TestContext.getDriver;
 import static com.dgmarkt10r.context.TestContext.removeDriver;
+import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class Hooks {
 

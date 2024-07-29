@@ -1,3 +1,4 @@
+
 Feature: Checking of the drop down page functionality
 
   @positive

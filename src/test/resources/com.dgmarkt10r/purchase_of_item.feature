@@ -1,3 +1,4 @@
+
 Feature: E2E Testing the product purchase process
 
   @positive @E2E

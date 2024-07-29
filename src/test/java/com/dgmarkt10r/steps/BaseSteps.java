@@ -16,7 +16,7 @@ public class BaseSteps {
     public void userIsOnTheMainPage() {
         MainPage mainPage = new MainPage();
         mainPage.enteringStandardLoginAndPassword();
-        mainPage.closeSubscribeWindow();
+//        mainPage.closeSubscribeWindow();
     }
 
     @When("the user goes to the My account menu")

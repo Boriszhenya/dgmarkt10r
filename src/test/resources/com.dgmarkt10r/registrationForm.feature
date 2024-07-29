@@ -1,3 +1,4 @@
+
 Feature: DGMARKT10R-16 - User registration
 
   @positive

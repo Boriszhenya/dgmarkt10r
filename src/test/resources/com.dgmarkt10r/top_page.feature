@@ -1,3 +1,4 @@
+
 Feature: Category page functionality
 
   @feature/DGMARKT-10R_Andrei_Idt_Storys

@@ -1,3 +1,4 @@
+
 Feature: Checking of the cart page functionality
 
   @positive

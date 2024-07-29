@@ -1,3 +1,4 @@
+
 Feature: DGMARKT10R-42 - Log in - Log out user
 
   @positive

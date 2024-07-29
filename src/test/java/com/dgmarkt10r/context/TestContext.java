@@ -41,6 +41,7 @@ public class TestContext {
     }
 
     public static void removeDriver() {
+
         driverThreadLocal.remove();
     }
 }

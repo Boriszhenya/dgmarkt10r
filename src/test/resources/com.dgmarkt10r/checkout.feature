@@ -1,3 +1,4 @@
+
 Feature: Checking of the checkout page functionality
 
   Background:

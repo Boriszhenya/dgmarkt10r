@@ -1,3 +1,4 @@
+
 Feature: Advertising functionality
 
   @positive
