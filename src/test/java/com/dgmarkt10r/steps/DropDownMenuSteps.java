@@ -43,7 +43,7 @@ public class DropDownMenuSteps {
 
     @Then("user transfers to the cart page")
     public void userTransfersToTheCartPage() {
-        assertEquals("Shopping Cart  (0.10kg)", new CartPage().shoppingCartTitle.getText());
+        assertEquals("Shopping Cart  (0.12kg)", new CartPage().shoppingCartTitle.getText());
     }
 
     @When("user clicks on the checkout button from drop down menu")

@@ -10,7 +10,7 @@ public class CategoryPage extends BasePage{
     public CategoryPage (){
             }
 
-    @FindBy(xpath = "//div[@class='inner']/a/img[@title='Cello C1920FS 19\" LED-backlit LCD TV']")
+    @FindBy(xpath = "//div[@class='inner']/a/img[@title='Cello C4020DVB 40\" LED-backlit LCD TV']")
     public WebElement productImage;
 
     @FindBy(xpath = "//button[@class='button-cart']")
@@ -26,7 +26,7 @@ public class CategoryPage extends BasePage{
     public WebElement titleCategory;
 
     @FindBy(xpath = "//*[contains(@class, 'sub-item2-category-content')]")
-    public List<WebElement>  allElementsInCategory;
+        public List<WebElement>  allElementsInCategory;
 
     @FindBy(xpath = "//a[text()='Health & Beauty'][@class='a-mega-second-link']")
     public WebElement titleHealthAndBeauty;
@@ -36,4 +36,7 @@ public class CategoryPage extends BasePage{
 
     @FindBy (xpath = "//a[text()='Headphone']")
     public WebElement titleHeadphone;
+
+    @FindBy(xpath = "//a[@class=\"a-top-link\"][.='Category']")
+    public WebElement categoryButton;
 }

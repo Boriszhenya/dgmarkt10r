@@ -1,6 +1,5 @@
 package com.dgmarkt10r.steps;
 
-import com.dgmarkt10r.context.TestContext;
 import com.dgmarkt10r.pages.RegisterAccountForm;
 import com.dgmarkt10r.pages.MainPage;
 import io.cucumber.java.en.And;

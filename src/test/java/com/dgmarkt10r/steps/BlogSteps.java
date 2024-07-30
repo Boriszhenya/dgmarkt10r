@@ -15,6 +15,7 @@ public class BlogSteps {
     public void clickBlogButton() {
         BlogPage bp = new BlogPage();
         bp.blogButton.click();
+
     }
 
     @Then("the title Blog should be displayed")
@@ -25,6 +26,7 @@ public class BlogSteps {
     @Given("user is on the Blog page")
     public void userIsOnTheBlogPage() {
         BlogPage bp = new BlogPage();
+        getWait().until(ExpectedConditions.visibilityOf(bp.blogButton));
         bp.blogButton.click();
         assertEquals("Blog", new BlogPage().blogTitle.getText());
     }

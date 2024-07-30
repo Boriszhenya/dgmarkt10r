@@ -17,7 +17,8 @@ public class CategorySteps {
 
     @When("the user go to a category")
     public void userGoingToCategory(){
-        getWait().until(ExpectedConditions.visibilityOf(cp.titleHealthAndBeauty));
+//        getActions().moveToElement(cp.categoryButton).perform();
+        getWait().until(ExpectedConditions.visibilityOf(cp.titleTextPageHealthBeauty));
     }
     @And("user checks 4 categories")
     public void checkingOfCategory(){

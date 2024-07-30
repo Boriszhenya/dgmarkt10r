@@ -48,7 +48,7 @@ public class AddToCartSteps {
     public void aMessageAppearsIndicatingThatTheItemWasSuccessfullyAddedToTheCart() {
         CategoryPage categoryPage = new CategoryPage();
         getWait().until(ExpectedConditions.visibilityOf(categoryPage.successMessage));
-        assertTrue(categoryPage.successMessage.getText().contains("Success: You have added Cello C3220G 32\" LED-backlit LCD TV to your shopping cart!\n" +
+        assertTrue(categoryPage.successMessage.getText().contains("Success: You have added Cello C4020DVB 40\" LED-backlit LCD TV to your shopping cart!\n" +
                 "×"));
     }
 

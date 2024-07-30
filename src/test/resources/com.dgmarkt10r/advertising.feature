@@ -1,5 +1,5 @@
 
-Feature: Advertising functionality
+Feature: Advertising functionality   //+
 
   @positive
   @Promo

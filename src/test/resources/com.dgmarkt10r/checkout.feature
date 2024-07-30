@@ -1,5 +1,5 @@
 
-Feature: Checking of the checkout page functionality
+Feature: Checking of the checkout page functionality  //++
 
   Background:
     Given user is on the main page

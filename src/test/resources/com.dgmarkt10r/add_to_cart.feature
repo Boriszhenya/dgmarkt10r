@@ -1,5 +1,5 @@
 
-Feature: Add to cart functionality
+Feature: Add to cart functionality   //++
 
   @positive
   @AddToCart

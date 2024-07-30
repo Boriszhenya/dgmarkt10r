@@ -12,7 +12,7 @@ Feature: Checking of the cart page functionality
     And user clicks on the view cart button
     When user changes the number of item quantity on "2"
     And clicks on the update button
-    Then the total price of items changed to "$518.00"
+    Then the total price of items changed to "$210.00"
     And a success message appears on the page
 
   @positive
@@ -40,7 +40,7 @@ Feature: Checking of the cart page functionality
     And inputs coupon code
     And clicks on apply coupon button
     Then a new message appears on the page
-    And price changed to "$233.10"
+    And price changed to "$94.50"
 
   @positive
   @Cart
@@ -64,7 +64,7 @@ Feature: Checking of the cart page functionality
     And clicks on the add to cart button
     And clicks on the cart link in success message
     When user clicks on the continue shopping button
-    And closes a subscribe window
+#    And closes a subscribe window
     Then user transfers to the main page
 
   @positive

@@ -3,6 +3,7 @@ package com.dgmarkt10r.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+
 public class BlogPage extends BasePage {
 
     @FindBy(xpath = "//div[@class='col-hoz']//span[.='Blog']")
@@ -34,9 +35,11 @@ public class BlogPage extends BasePage {
 
     @FindBy(css = "h1")
     public WebElement titleCategoryBlogFashion;
+
     @FindBy(css = "h1")
     public WebElement titleLatestPost;
 
     @FindBy(css = " a[href$='id=16']> img")
     public WebElement pictureLatestPost;
+
 }
