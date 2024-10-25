@@ -36,6 +36,7 @@ public class Hooks {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
+                //chromeOptions.addArguments("--disable-search-engine-choice-screen");
                 if (ConfigurationReader.get("headless").toLowerCase().contains("true")) {
                     chromeOptions.addArguments("--headless");
                     chromeOptions.addArguments("--no-sandbox");
@@ -43,9 +44,11 @@ public class Hooks {
                     chromeOptions.addArguments("--disable-popup-blocking");
                     chromeOptions.addArguments("--disable-notifications");
                     chromeOptions.addArguments("--lang=en-en");
+                   // chromeOptions.addArguments("--disable-search-engine-choice-screen");
                 }
                 if (ConfigurationReader.get("maximize").toLowerCase().contains("true")) {
                     chromeOptions.addArguments("start-maximized");
+                  //  chromeOptions.addArguments("--disable-search-engine-choice-screen");
                 }
                 if (ConfigurationReader.get("remote_server").toLowerCase().contains("true")) {
                     chromeOptions.setCapability("platformName", ConfigurationReader.get("remote_server_platform"));
